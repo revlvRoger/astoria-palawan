@@ -3,5 +3,86 @@
     margin: 0;
 }
 body {
+    font-family: 'Montserrat';
+    background: #7c7c7c;
+}
+/*all classes*/
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+/*    border: 1px solid black;*/
+}
+.en-wrapper {
+    width: 960px;
+    margin: 0 auto;
+/*    border: 1px solid black;*/
+}
+.logo-left {
+    float: left;
+/*    margin: 10px;
+    margin-left: 0;*/
+/*    border: 1px solid red;*/
+}
+.nav-right {
+    float: right;
+    margin-top: 25px;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.clearfix {
+    overflow: hidden;
+}
+
+
+
+/*header*/
+header {
+    width: 100%;
+    margin-top: 30px;
+/*    border: 1px solid red;*/
+}
+/*.video {
+    overflow: hidden;
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    max-height: 100%;
+}*/
+/*Language*/
+.en-wrapper > ul{
+    text-align: right;
+    text-style: none;
+}
+.en-wrapper > ul > li {
+    display: inline-block;
+    font-size: 9pt;
+    padding-left: 5px;
+    color: #EEEEEE;
+}
+.en-wrapper > ul li:last-child {
+    border-left: 1px solid #EEEEEE;
+    color: #9597AA;
+}
+/*Home Navigation*/
+nav {
+    text-align: left;
+    text-style: none;
+}
+nav > ul > li {
+
+    font-size: 10pt;
+    display: inline-block;
+    margin-left: 20px;
+    color: #EEEEEE;
+}
+nav > ul > li:first-child {
+    color: #00B29F;
+}
+nav > ul > li:last-child {
+/*    border: 1px solid black;*/
+    background: #00B29F;
+    border-radius: 25px;
+    padding: 15px 25px;
 
 }
