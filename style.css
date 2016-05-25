@@ -4,24 +4,24 @@
 }
 body {
     font-family: 'Montserrat';
-    background: #7c7c7c;
+
 }
 /*all classes*/
 .wrapper {
     width: 960px;
     margin: 0 auto;
-/*    border: 1px solid black;*/
+/*    background: grey;*/
+    border: 1px solid black;
 }
 .en-wrapper {
     width: 960px;
     margin: 0 auto;
-/*    border: 1px solid black;*/
+/*    background: grey;*/
+    border: 1px solid black;
 }
 .logo-left {
     float: left;
-/*    margin: 10px;
-    margin-left: 0;*/
-/*    border: 1px solid red;*/
+    border: 1px solid red;
 }
 .nav-right {
     float: right;
@@ -35,24 +35,44 @@ body {
 }
 
 
-
 /*header*/
 header {
     width: 100%;
-    margin-top: 30px;
-/*    border: 1px solid red;*/
+    border: 1px solid red;
+    z-index: 1;
 }
-/*.video {
+/*video play*/
+.videoplay {
     overflow: hidden;
     position: absolute;
-    z-index: -100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.videoplay video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    max-height: 100%;
-}*/
+    z-index: -100;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -99;
+    background: rgba(0, 0, 0, 0.5);
+}
 /*Language*/
-.en-wrapper > ul{
+.en-wrapper > ul {
     text-align: right;
     text-style: none;
+    margin-top: 40px;
 }
 .en-wrapper > ul > li {
     display: inline-block;
@@ -84,5 +104,28 @@ nav > ul > li:last-child {
     background: #00B29F;
     border-radius: 25px;
     padding: 15px 25px;
+
+}
+/*visit and explore astoria palawan*/
+.explore-wrapper {
+    width: 960px;
+    margin: 0 auto;
+    background: grey;
+    border: 1px solid black;
+    margin-top: 40px;
+}
+.explore-wrapper > ul {
+    text-align: center;
+    text-decoration: none;
+}
+.explore-wrapper > ul > li {
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.explore-wrapper > ul > li:first-child {
+    font-size: 45pt;
+    color: #EEEEEE;
+}
+.explore-wrapper span {
 
 }
