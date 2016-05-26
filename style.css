@@ -101,21 +101,21 @@ video {
 
 
 /*Home Navigation*/
-nav {
+.nav-right {
     text-align: left;
     text-style: none;
 }
-nav > ul > li {
+.nav-right > ul > li {
 
     font-size: 10pt;
     display: inline-block;
     margin-left: 20px;
     color: #EEEEEE;
 }
-nav > ul > li:first-child {
+.nav-right > ul > li:first-child {
     color: #00B29F;
 }
-nav > ul > li:last-child {
+.nav-right > ul > li:last-child {
 /*    border: 1px solid black;*/
     background: #00B29F;
     border-radius: 25px;
@@ -213,11 +213,13 @@ nav > ul > li:last-child {
     width: 35%;
 }
 .content-right .search-box {
+    background: #D3CECB;
     height: 45px;
     width: 100%;
     margin-bottom: 20px;
     font-size: 10pt;
     padding-left: 10px;
+    border: 0;
 }
 .content-right .btn {
     height: 45px;
@@ -282,4 +284,83 @@ nav > ul > li:last-child {
     position: absolute;
     height: 200px;
     width: 25%;
+}
+/*checkout social feeds*/
+.socialfeed-content {
+    width: 100%;
+    background: #F2F2F2;
+/*    border: 2px solid red;*/
+}
+.social-wrapper {
+    margin: 0 auto;
+    width: 960px;
+/*    border: 2px solid black;*/
+    padding-top:40px;
+}
+.social-wrapper .title > p:first-child {
+    color: #6CD6CD;
+    font-size: 11pt;
+}
+.social-wrapper .title > p:last-child {
+    color: #00B19E;
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*facebook navigation*/
+.face-nav {
+    text-align: left;
+    text-style: none;
+    overflow: hidden;
+
+/*    border: 1px solid black;*/
+
+}
+.face-nav > ul > li {
+/*    border: 1px solid black;*/
+    font-size: 10pt;
+    display: inline-block;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-style: none;
+
+}
+.face-nav > ul > li > a {
+    text-decoration: none;
+    color: #FFF;
+}
+.face-nav > ul > li:first-child {
+    float: left;
+    position: relative;
+    background: #4C4C4C;
+    width: 192px;
+
+}
+.face-nav > ul > li:nth-child(2) {
+    float: left;
+    position: relative;
+    background: #2D7BC9;
+    width: 192px;
+
+}
+.face-nav > ul > li:nth-child(3) {
+    float: left;
+    position: relative;
+    background: #00B8F5;
+    width: 192px;
+}
+.face-nav > ul > li:nth-child(4) {
+    float: left;
+    position: relative;
+    background: #EA003A;
+    width: 192px;
+}
+.face-nav > ul > li:last-child {
+    float: left;
+    position: absolute;
+    background: #6E8E99;
+    width: 192px;
+
 }
