@@ -45,9 +45,11 @@ header {
 }
 /*video play*/
 .videoplay {
+
     background: rgba(0, 0, 0, 0.5);
 }
 video {
+    display: block;
     position: relative;
     z-index: -100;
     transition: 1s opacity;
@@ -55,46 +57,24 @@ video {
     height: 100%;
     min-width: 100%;
     min-height: 100%;
-    display: block;
 }
-/*.videoplay {
-    position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-.videoplay video {
-    display: block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    z-index: -100;
-}
-.video-overlay {
-    position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -99;
-    background: rgba(0, 0, 0, 0.5);
-}*/
 /*Language*/
 .en-wrapper > ul {
     text-align: right;
     text-style: none;
     margin-top: 40px;
 }
+.en-wrapper > ul > li > a {
+    text-decoration: none;
+    color: #EEEEEE;
+}
 .en-wrapper > ul > li {
     display: inline-block;
     font-size: 9pt;
     padding-left: 5px;
-    color: #EEEEEE;
 }
-.en-wrapper > ul li:last-child {
+.en-wrapper > ul li:last-child > a {
+    padding-left: 5px;
     border-left: 1px solid #EEEEEE;
     color: #9597AA;
 }
@@ -110,9 +90,14 @@ video {
     font-size: 10pt;
     display: inline-block;
     margin-left: 20px;
+
+}
+.nav-right > ul > li > a {
+    text-decoration: none;
     color: #EEEEEE;
 }
-.nav-right > ul > li:first-child {
+
+.nav-right > ul > li:first-child > a{
     color: #00B29F;
 }
 .nav-right > ul > li:last-child {
@@ -152,15 +137,15 @@ video {
     color: #00B29F;
     margin-bottom: 300px;
 }
-.explore-wrapper > ul > li:last-child {
-    width: 5px;
-    height: 5px;
+.explore-wrapper > ul > li:last-child > i {
+    width: 10px;
+    height: 10px;
     margin: 0 auto;
     border-radius: 50%;
-    padding: 30px;
+    padding: 25px;
     background: #00B29F;
+    color: #EEEEEE;
 }
-
 
 
 /*about astoria-palawan*/
@@ -170,16 +155,13 @@ video {
     background: #4E382A;
 }
 .astoria-wrapper {
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-top: 70px;
     overflow: hidden;
     width: 960px;
     margin: 0 auto;
 /*    border: 1px solid red;*/
 }
-
-
-
 /*asotria content-left*/
 .astoria-wrapper .content-left {
     float: left;
@@ -202,7 +184,7 @@ video {
     font-size: 11pt;
 }
 .content-left > p:last-child{
-    color: #fff;
+    color: #97928F;
     font-size: 11pt;
     line-height:150%;
 }
@@ -366,7 +348,6 @@ video {
 /*coMments*/
 .comment-content {
     width: 100%;
-
     border: 2px solid black;
 }
 .comment-content .comment-wrapper {
@@ -382,6 +363,10 @@ video {
     height: 700px;
     border: 1px solid black;
 }
+
+
+
+
 .comment-wrapper .comment-right{
     float: right;
     width: 49%;
@@ -431,6 +416,25 @@ video {
 .footer-wrapper > p {
     text-align: center;
     color: #97928F;
-    font-size: 11pt;
+    font-size: 10pt;
     margin-bottom: 60px;
+}
+.footer-icons {
+    text-align:  center;
+    margin-bottom: 10px;
+}
+.footer-icons > li {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #97928F;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    line-height: 0.9;
+    text-align: center;
+    color: #FFF;
+    margin-left: 5px;
+}
+.footer-icons > li > a > i {
+    color: #97928F;
 }
