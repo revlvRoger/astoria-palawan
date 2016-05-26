@@ -415,14 +415,22 @@ video {
     padding-top: 50px;
 }
 .footer-wrapper > img {
-    align: middle;
+    border: 1px solid red;
+    margin-left: 380px;
 }
 .nav-center ul {
     text-align: center;
+    margin-bottom: 60px;
 }
 .nav-center >ul > li {
     display: inline-block;
     font-size: 11pt;
     padding: 5px;
     color: #FFF;
+}
+.footer-wrapper > p {
+    text-align: center;
+    color: #97928F;
+    font-size: 11pt;
+    margin-bottom: 60px;
 }
