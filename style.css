@@ -11,17 +11,17 @@ body {
     width: 960px;
     margin: 0 auto;
 /*    background: grey;*/
-    border: 1px solid black;
+/*    border: 1px solid black;*/
 }
 .en-wrapper {
     width: 960px;
     margin: 0 auto;
 /*    background: grey;*/
-    border: 1px solid black;
+/*    border: 1px solid black;*/
 }
 .logo-left {
     float: left;
-    border: 1px solid red;
+/*    border: 1px solid red;*/
 }
 .nav-right {
     float: right;
@@ -37,21 +37,22 @@ body {
 
 /*header*/
 header {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
     width: 100%;
-    border: 1px solid red;
+/*    border: 1px solid red;*/
     z-index: 1;
 }
 /*video play*/
 .videoplay {
-    overflow: hidden;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
 }
 .videoplay video {
-    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -60,7 +61,7 @@ header {
     z-index: -100;
 }
 .video-overlay {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     bottom: 0;
@@ -110,22 +111,101 @@ nav > ul > li:last-child {
 .explore-wrapper {
     width: 960px;
     margin: 0 auto;
-    background: grey;
-    border: 1px solid black;
-    margin-top: 40px;
+/*    background: grey;*/
+/*    border: 1px solid black;*/
+    margin-top: 10px;
 }
 .explore-wrapper > ul {
     text-align: center;
     text-decoration: none;
 }
 .explore-wrapper > ul > li {
-    padding-bottom: 50px;
     overflow: hidden;
 }
 .explore-wrapper > ul > li:first-child {
     font-size: 45pt;
     color: #EEEEEE;
 }
-.explore-wrapper span {
+.explore-wrapper .line {
+    border-bottom: 5px solid #00B29F;
+    margin: 0 auto;
+    width: 50px;
+    margin-bottom: 30px;
+}
+.explore-wrapper > ul > li:nth-child(3) {
+    font-size: 20pt;
+    color: #00B29F;
+    margin-bottom: 300px;
+}
+.explore-wrapper > ul > li:last-child {
+    width: 5px;
+    height: 5px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 30px;
+    background: #00B29F;
+}
 
+
+
+/*about astoria-palawan*/
+.content {
+    width: 100%;
+/*    border: 2px solid black;*/
+    background: #4E382A;
+}
+.astoria-wrapper {
+    padding-top: 50px;
+    overflow: hidden;
+    width: 960px;
+    margin: 0 auto;
+/*    border: 1px solid red;*/
+}
+/*asotria content-left*/
+.astoria-wrapper .content-left {
+    float: left;
+    position: relative;
+/*    border: 1px solid black;*/
+    width: 65%;
+}
+.content-left > p:first-child {
+    color: #046D5D;
+}
+.content-left > p:nth-child(2) {
+    color: #00B29F;
+    font-size: 22pt;
+    margin-bottom: 40px;
+}
+.content-left > p:nth-child(3) {
+    color: #fff;
+    line-height:150%;
+    margin-bottom: 40px;
+    font-size: 11pt;
+}
+.content-left > p:last-child{
+    color: #fff;
+    font-size: 11pt;
+    line-height:150%;
+}
+.astoria-wrapper .content-right {
+    float: right;
+    position: relative;
+/*    border: 1px solid red;*/
+    width: 35%;
+}
+.content-right .search-box {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 10pt;
+    padding-left: 10px;
+}
+.content-right .btn {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 10pt;
+    background: #00B29F;
+    color: #fff;
+    border: 0;
 }
