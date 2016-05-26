@@ -315,7 +315,6 @@ video {
     overflow: hidden;
 
 /*    border: 1px solid black;*/
-
 }
 .face-nav > ul > li {
 /*    border: 1px solid black;*/
@@ -362,5 +361,68 @@ video {
     position: absolute;
     background: #6E8E99;
     width: 192px;
+}
 
+/*coMments*/
+.comment-content {
+    width: 100%;
+
+    border: 2px solid black;
+}
+.comment-content .comment-wrapper {
+    width: 960px;
+    margin: 0 auto;
+    height: 700px;
+    border: 1px solid red;
+}
+.comment-wrapper .comment-left{
+    float: left;
+    position:relative;
+    width: 49%;
+    height: 700px;
+    border: 1px solid black;
+}
+.comment-wrapper .comment-right{
+    float: right;
+    width: 49%;
+    height: 700px;
+    border: 1px solid black;
+}
+/*comments*/
+
+.google-map {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
+#googleMap {
+ /*   border: 2px solid red;*/
+    width: 100%;
+    height: 100%;
+}
+
+
+/*footer*/
+.footer {
+    width: 100%;
+    border:1px solid black;
+    background: #4E382A;
+}
+.footer .footer-wrapper {
+    border: 1px solid red;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.footer-wrapper > img {
+    align: middle;
+}
+.nav-center ul {
+    text-align: center;
+}
+.nav-center >ul > li {
+    display: inline-block;
+    font-size: 11pt;
+    padding: 5px;
+    color: #FFF;
 }

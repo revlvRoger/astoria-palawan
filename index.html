@@ -7,6 +7,21 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="normalize.css">
+        <!-- googlemap script -->
+        <script src="http://maps.googleapis.com/maps/api/js">
+        </script>
+
+        <script>
+        function initialize() {
+        var mapProp = {
+        center:new google.maps.LatLng(9.985736, 118.967063),
+        zoom:14,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
     </head>
 
     <!-- body -->
@@ -109,20 +124,40 @@
                     </ul>
                 </nav>
             </div>
-
+            <!-- Comments -->
             <div class="comment-content">
                 <div class="comment-wrapper">
                     <div class="comment-left">
-
                     </div>
 
                     <div class="comment-right">
-
                     </div>
                 </div>
             </div>
         </div>
-        <footer>
+        <div class="google-map">
+            <div id="googleMap"></div>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+
+            <div class="footer-wrapper">
+
+                 <img class="logo-center" src="astoria-palawan/logo.png" alt="" width="200">
+
+
+                <!-- home navigation -->
+                <nav class="nav-center">
+                    <ul>
+                        <li class="text-uppercase">Home</li>
+                        <li class="text-uppercase">About</li>
+                        <li class="text-uppercase">Facilities</li>
+                        <li class="text-uppercase">Gallery</li>
+                        <li class="text-uppercase">Contacts</li>
+                        <li class="text-uppercase">Reservation</li>
+                    </ul>
+                </nav>
+            </div>
         </footer>
     </body>
 </html>
