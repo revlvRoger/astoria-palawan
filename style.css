@@ -45,7 +45,6 @@ header {
 }
 /*video play*/
 .videoplay {
-
     background: rgba(0, 0, 0, 0.5);
 }
 video {
@@ -191,6 +190,7 @@ video {
 .astoria-wrapper .content-right {
     float: right;
     position: relative;
+    overflow: hidden;
 /*    border: 1px solid red;*/
     width: 35%;
 }
@@ -203,6 +203,7 @@ video {
     padding-left: 10px;
     border: 0;
 }
+
 .content-right .btn {
     height: 45px;
     width: 100%;
@@ -212,6 +213,8 @@ video {
     color: #fff;
     border: 0;
 }
+
+
 
 /*slide galleries*/
 .slide-gallery {
@@ -312,6 +315,10 @@ video {
     text-decoration: none;
     color: #FFF;
 }
+.face-nav > ul > li > i{
+    margin-right: 5px;
+    color: #FFF;
+}
 .face-nav > ul > li:first-child {
     float: left;
     position: relative;
@@ -346,39 +353,218 @@ video {
 }
 
 /*coMments*/
+
 .comment-content {
     width: 100%;
-    border: 2px solid black;
+/*    border: 2px solid black;*/
+    margin-top: 40px;
+    overflow: hidden;
 }
 .comment-content .comment-wrapper {
     width: 960px;
     margin: 0 auto;
-    height: 700px;
-    border: 1px solid red;
+/*    border: 1px solid red;*/
+    overflow: hidden;
 }
 .comment-wrapper .comment-left{
     float: left;
-    position:relative;
+    position: relative;
     width: 49%;
-    height: 700px;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
+
+}
+.comment-wrapper .comment-left img {
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+}
+.comment-wrapper .comment-left > ul > li {
+    list-style: none;
+    padding: 20px;
+ /*   border: 1px solid black;*/
+    margin-bottom: 30px;
+    background: #FFFFFF;
+}
+/*li-1*/
+.comment-left > ul > li > span {
+    float: right;
+    font-size: 11pt;
+    color: #A6A6A6;
+}
+.comment-left > ul > li:first-child > p {
+    line-height: 150%;
+    font-size: 11pt;
+    color: #A6A6A6;
+}
+
+.comment-left > ul > li:first-child > p > a {
+    text-decoration: none;
+    color: #00B29F;
+}
+.comment-left > ul > li:first-child  > span {
+    float: right;
 }
 
 
+/*li-2*/
+.comment-left > ul > li > span {
+    float: right;
+    font-size: 11pt;
+}
+.comment-left > ul > li:nth-child(2) > p {
+    line-height: 150%;
+    font-size: 11pt;
+    color: #A6A6A6;
+
+}
+.comment-left > ul > li:nth-child(2) > p > a {
+    text-decoration: none;
+    color: #00B29F;
+}
+.comment-left > ul > li:nth-child(2) > span {
+    float: right;
+}
+
+/*li-3*/
+.comment-left > ul > li > span {
+    float: right;
+    font-size: 11pt;
+}
+.comment-left > ul > li:nth-child(3) > p {
+    line-height: 150%;
+    font-size: 11pt;
+    color: #A6A6A6;
+
+}
+.comment-left > ul > li:nth-child(3) > p > a {
+    text-decoration: none;
+    color: #00B29F;
+}
+.comment-left > ul > li:nth-child(3) > span {
+    float: right;
+}
 
 
-.comment-wrapper .comment-right{
+/*li-4*/
+.comment-left > ul > li > span {
+    float: right;
+    font-size: 11pt;
+}
+.comment-left > ul > li:nth-child(4) > p {
+    line-height: 150%;
+    font-size: 11pt;
+    color: #A6A6A6;
+
+}
+.comment-left > ul > li:nth-child(4) > p > a {
+    text-decoration: none;
+    color: #00B29F;
+}
+.comment-left > ul > li:nth-child(4) > span {
+    float: right;
+}
+/*li-1*/
+.comment-right > ul > li > span {
+    float: right;
+    font-size: 11pt;
+    color: #A6A6A6;
+}
+.comment-right > ul > li:first-child > p {
+    line-height: 150%;
+    font-size: 11pt;
+    color: #A6A6A6;
+
+}
+
+/*comment right*/
+.comment-wrapper .comment-right {
     float: right;
     width: 49%;
     height: 700px;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
 }
-/*comments*/
+.comment-wrapper .comment-right img {
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+}
+.comment-wrapper .comment-right > ul > li {
+    list-style: none;
+    padding: 20px;
+/*    border: 1px solid black;*/
+    margin-bottom: 30px;
+    background: #FFFFFF;
+}
+.comment-right > ul > li:first-child > p > a {
+    text-decoration: none;
+    color: #00B29F;
+}
+.comment-right > ul > li:first-child  > span {
+    float: right;
+}
+/*li-2*/
+.comment-right > ul > li > span {
+    float: right;
+    font-size: 11pt;
+}
+.comment-right > ul > li:nth-child(2) > p {
+    line-height: 150%;
+    font-size: 11pt;
+    color: #A6A6A6;
+
+}
+.comment-right > ul > li:nth-child(2) > p > a {
+    text-decoration: none;
+    color: #00B29F;
+}
+.comment-right > ul > li:nth-child(2) > span {
+    float: right;
+}
+/*li-3*/
+.comment-right > ul > li > span {
+    float: right;
+    font-size: 11pt;
+}
+.comment-right > ul > li:nth-child(3) > p {
+    line-height: 150%;
+    font-size: 11pt;
+    color: #A6A6A6;
+
+}
+.comment-right > ul > li:nth-child(3) > p > a {
+    text-decoration: none;
+    color: #00B29F;
+}
+.comment-right > ul > li:nth-child(3) > span {
+    float: right;
+}
+
+/*li-4*/
+.comment-right > ul > li > span {
+    float: right;
+    font-size: 11pt;
+}
+.comment-right > ul > li:nth-child(4) > p {
+    line-height: 150%;
+    font-size: 11pt;
+    color: #A6A6A6;
+
+}
+.comment-right > ul > li:nth-child(4) > p > a {
+    text-decoration: none;
+    color: #00B29F;
+}
+.comment-right > ul > li:nth-child(4) > span {
+    float: right;
+}
+
+
 
 .google-map {
     width: 100%;
     height: 500px;
     margin: 0 auto;
+    overflow: hidden;
 }
 #googleMap {
  /*   border: 2px solid red;*/
@@ -390,24 +576,25 @@ video {
 /*footer*/
 .footer {
     width: 100%;
-    border:1px solid black;
+/*    border:1px solid black;*/
+    overflow: hidden;
     background: #4E382A;
 }
 .footer .footer-wrapper {
-    border: 1px solid red;
+/*    border: 1px solid red;*/
     width: 960px;
     margin: 0 auto;
     padding-top: 50px;
 }
 .footer-wrapper > img {
-    border: 1px solid red;
+/*    border: 1px solid red;*/
     margin-left: 380px;
 }
 .nav-center ul {
     text-align: center;
     margin-bottom: 60px;
 }
-.nav-center >ul > li {
+.nav-center > ul > li {
     display: inline-block;
     font-size: 11pt;
     padding: 5px;
